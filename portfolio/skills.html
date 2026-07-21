@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habilidades | Olga María Lopez Delgadillo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="index.html" class="brand"><img src="img/logo.png" alt="O.L. Logo"></a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Sobre mí</a>
+            <a href="skills.html" class="active">Habilidades</a>
+            <a href="projects.html">Proyectos</a>
+            <a href="experience.html">Experiencia</a>
+            <a href="specializations.html">Áreas de Especialización</a>
+            <a href="contact.html">Contacto</a>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <section id="hero" style="min-height: auto; padding-bottom: 2rem;">
+        <div class="hero-content reveal active">
+            <div class="hero-badge">
+                <i class="fa-solid fa-layer-group"></i> Mi Stack Tecnológico
+            </div>
+            <h1 class="hero-title">Mis <span>Habilidades</span></h1>
+            <p class="hero-desc">
+                Una mirada en profundidad a las herramientas, lenguajes y metodologías en las que me especializo.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Grid Section -->
+    <section id="skills-detail" style="padding-top: 20px;">
+        <div class="skills-grid reveal active"
+            style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2.5rem;">
+
+            <!-- Category 1: Frontend -->
+            <div class="skill-category glass-card">
+                <h3><i class="fa-brands fa-react"></i> Frontend</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>React / Next.js</span><span>Intermedio</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80%" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>HTML5 / CSS3</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95%" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>JavaScript / TypeScript</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 2: Backend -->
+            <div class="skill-category glass-card">
+                <h3><i class="fa-brands fa-node-js"></i> Backend</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Node.js / Express</span><span>Intermedio</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="78%" style="width: 78%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Python & AI (TensorFlow)</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Java</span><span>Intermedio</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75%" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 3: UX/UI Design -->
+            <div class="skill-category glass-card">
+                <h3><i class="fa-solid fa-palette"></i> UX/UI Design</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Design Thinking & Research</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Prototipado e Interacción</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95%" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Arquitectura de Información</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88%" style="width: 88%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 4: Bases de Datos -->
+            <div class="skill-category glass-card">
+                <h3><i class="fa-solid fa-database"></i> Bases de datos</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>PostgreSQL / SQL</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85%" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>MongoDB / NoSQL</span><span>Intermedio</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="70%" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Docker & Containers</span><span>Intermedio</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80%" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 5: Sistemas Embebidos -->
+            <div class="skill-category glass-card">
+                <h3><i class="fa-solid fa-microchip"></i> Sistemas embebidos</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>C / C++</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Arduino / ESP32 / IoT</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95%" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Diseño de PCBs (Hardware)</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85%" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 6: Herramientas de Desarrollo -->
+            <div class="skill-category glass-card">
+                <h3><i class="fa-solid fa-terminal"></i> Herramientas de desarrollo</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Git / GitHub</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="92%" style="width: 92%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Linux / Bash Shell</span><span>Intermedio</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80%" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>VS Code & IDEs</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95%" style="width: 95%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 7: Herramientas de Diseño -->
+            <div class="skill-category glass-card">
+                <h3><i class="fa-solid fa-pen-nib"></i> Herramientas de diseño</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Figma</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95%" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Adobe XD / Creative Cloud</span><span>Intermedio</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75%" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 8: Idiomas -->
+            <div class="skill-category glass-card">
+                <h3><i class="fa-solid fa-language"></i> Idiomas</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Español</span><span>Nativo</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="100%" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Inglés</span><span>Intermedio (B2)</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75%" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 9: Habilidades Blandas -->
+            <div class="skill-category glass-card">
+                <h3><i class="fa-solid fa-people-group"></i> Habilidades blandas</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Trabajo en equipo</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95%" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Resolución de problemas</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95%" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Comunicación asertiva</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span>Liderazgo</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88%" style="width: 88%;"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="index.html" class="brand"><img src="img/logo.png" alt="O.L. Logo"></a>
+            <div class="social-links">
+                <a href="https://github.com/olguitabonaparty"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/olgalopezdelgadillo/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/59161592626"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/itsbonaparty"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Olga María Lopez Delgadillo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Particles.js Library (loaded via CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

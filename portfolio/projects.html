@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | Olga María Lopez Delgadillo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .project-detailed-card {
+            margin-bottom: 4rem;
+            padding: 2.5rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media (min-width: 992px) {
+            .project-detailed-card {
+                grid-template-columns: 1.2fr 0.8fr;
+                gap: 3rem;
+            }
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, rgba(129, 140, 248, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+            border: 2px dashed var(--card-border);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 500;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .results-placeholder {
+            width: 100%;
+            height: 180px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 2px dashed var(--card-border);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .image-placeholder img,
+        .results-placeholder img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 14px;
+            display: block;
+        }
+
+        .image-placeholder.has-image {
+            height: auto;
+            padding: 0;
+            overflow: hidden;
+            border-style: solid;
+            background: transparent;
+        }
+
+        .results-placeholder.has-image {
+            height: auto;
+            padding: 0;
+            overflow: hidden;
+            border-style: solid;
+            background: transparent;
+        }
+
+        .project-section-title {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .role-badge {
+            display: inline-block;
+            padding: 0.35rem 0.85rem;
+            border-radius: 50px;
+            background: var(--accent-alpha-10);
+            color: var(--accent-color);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(129, 140, 248, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="index.html" class="brand"><img src="img/logo.png" alt="O.L. Logo"></a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Sobre mí</a>
+            <a href="skills.html">Habilidades</a>
+            <a href="projects.html" class="active">Proyectos</a>
+            <a href="experience.html">Experiencia</a>
+            <a href="specializations.html">Áreas de Especialización</a>
+            <a href="contact.html">Contacto</a>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <section id="hero" style="min-height: auto; padding-bottom: 2rem;">
+        <div class="hero-content reveal active">
+            <div class="hero-badge">
+                <i class="fa-solid fa-code-branch"></i> Portafolio de Trabajos
+            </div>
+            <h1 class="hero-title">Mis <span>Proyectos</span></h1>
+            <p class="hero-desc">
+                Explora el desglose técnico, metodologías y resultados de mis desarrollos más destacados.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Detail List Section -->
+    <section id="projects-detail" style="padding-top: 20px;">
+
+        <!-- Project 1: VitaCare -->
+        <div class="project-detailed-card glass-card reveal active">
+            <div>
+                <span class="role-badge"><i class="fa-solid fa-user-gear"></i> Mi Rol: Desarrolladora Principal Hardware
+                    & IoT</span>
+                <h2 style="font-size: 2.2rem; margin-bottom: 1rem; font-family: 'Outfit';">VitaCare</h2>
+
+                <div class="project-tags" style="margin-bottom: 1.5rem;">
+                    <span class="project-tag">ESP32</span>
+                    <span class="project-tag">Node.js</span>
+                    <span class="project-tag">Socket.IO</span>
+                    <span class="project-tag">IoT</span>
+                    <span class="project-tag">Sistemas Embebidos</span>
+                    <span class="project-tag">C++</span>
+                </div>
+
+                <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">
+                    Diseño de un sistema para cabeceras hospitalarias inteligentes capaz de monitorear signos vitales y
+                    variables ambientales en tiempo real, mejorando la respuesta médica.
+                </p>
+
+                <h3 class="project-section-title">El Problema</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+                    En los centros de salud de Bolivia, el monitoreo constante de pacientes suele depender del personal
+                    de enfermería de forma periódica, lo que dificulta la detección de anomalías repentinas. Además, las
+                    variables ambientales de las salas no se miden integradamente con los signos del paciente.
+                </p>
+
+                <h3 class="project-section-title">La Solución</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+                    Se diseñó una cabecera hospitalaria inteligente equipada con microcontroladores ESP32 que integran
+                    sensores de signos vitales (pulso, saturación de oxígeno, temperatura corporal) y sensores de
+                    entorno. Los datos se envían a un servidor central en tiempo real usando WebSockets.
+                </p>
+
+                <h3 class="project-section-title">El Proceso</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+                    1. <strong>Investigación & UX</strong>: Análisis de las necesidades del personal médico y
+                    distribución de salas.<br>
+                    2. <strong>Hardware</strong>: Diseño de circuitos y PCB en Altium, optimizando el filtrado de ruido
+                    en sensores biológicos.<br>
+                    3. <strong>Firmware & Backend</strong>: Programación del firmware en C++ (FreeRTOS) y desarrollo de
+                    un servidor centralizado en Node.js para visualización y alertas instantáneas.
+                </p>
+
+                <div style="margin-top: 2rem;">
+                    <a href="https://github.com/olguitabonaparty/tesis-sistemas-embebidos-salud-bolivia"
+                        class="btn btn-primary" target="_blank">
+                        <i class="fa-brands fa-github"></i> Ver en GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                <div class="image-placeholder has-image">
+                    <img src="img/VitaCare_ImgPrin.png" alt="VitaCare Imagen Principal">
+                </div>
+
+                <div>
+                    <h3 class="project-section-title" style="margin-top: 0.5rem;">Resultados Obtenidos</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        Reducción drástica del tiempo de alerta ante anomalías médicas y registro digital unificado de
+                        signos vitales.
+                    </p>
+                    <div class="results-placeholder has-image">
+                        <img src="img/VitaCare_Resultados.png" alt="VitaCare Gráficas y Resultados">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2: Fundación VIVA -->
+        <div class="project-detailed-card glass-card reveal active">
+            <div>
+                <span class="role-badge"><i class="fa-solid fa-user-gear"></i> Mi Rol: Diseñadora UX/UI</span>
+                <h2 style="font-size: 2.2rem; margin-bottom: 1rem; font-family: 'Outfit';">Fundación VIVA</h2>
+
+                <div class="project-tags" style="margin-bottom: 1.5rem;">
+                    <span class="project-tag">Figma</span>
+                    <span class="project-tag">Design Thinking</span>
+                    <span class="project-tag">Wireframing</span>
+                    <span class="project-tag">UX/UI Design</span>
+                </div>
+
+                <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">
+                    Rediseño y mejora de la experiencia digital interactiva mediante metodologías UX/UI para potenciar
+                    la accesibilidad, el alcance y la usabilidad de sus iniciativas sociales.
+                </p>
+
+                <h3 class="project-section-title">El Problema</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+                    La plataforma web y móvil anterior de la fundación presentaba dificultades de navegación para
+                    usuarios no técnicos y una baja conversión en el flujo de donaciones o consultas debido a interfaces
+                    sobrecargadas.
+                </p>
+
+                <h3 class="project-section-title">La Solución</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+                    Se diseñó un flujo de usuario interactivo simplificado con una arquitectura de información clara,
+                    dándole prominencia a los proyectos sociales y haciendo el proceso de contacto extremadamente
+                    intuitivo.
+                </p>
+
+                <h3 class="project-section-title">El Proceso</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+                    1. <strong>Empatía</strong>: Realización de entrevistas a usuarios finales y creación de arquetipos
+                    de personas.<br>
+                    2. <strong>Wireframes</strong>: Estructuración del sitio en baja fidelidad para validar la
+                    navegación jerárquica.<br>
+                    3. <strong>Prototipado</strong>: Desarrollo del prototipo interactivo en Figma de alta fidelidad,
+                    aplicando contrastes y accesibilidad Web (WCAG).
+                </p>
+
+                <div style="margin-top: 2rem;">
+                    <a href="https://www.figma.com/design/UfCpVMiMiLY7nouCd5hnPw/Redise%C3%B1o-UX-UI-%E2%80%93-Fundaci%C3%B3n-VIVA?node-id=6-1933&t=MsxzO8IKqHBzo6Cv-1"
+                        class="btn btn-primary" target="_blank">
+                        <i class="fa-brands fa-figma"></i> Ver en Figma
+                    </a>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                <div class="image-placeholder has-image">
+                    <img src="img/FundacionVivaImgPrin.png" alt="Fundación VIVA Imagen Principal">
+                </div>
+
+                <div>
+                    <h3 class="project-section-title" style="margin-top: 0.5rem;">Resultados Obtenidos</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        Aumento en la satisfacción de usuarios en pruebas de usabilidad y navegación fluida entre
+                        iniciativas.
+                    </p>
+                    <div class="results-placeholder has-image">
+                        <img src="img/FundacionVivaMockups.png" alt="Fundación VIVA Mockups y Resultados UX">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3: Alejandro Vaca Portfolio -->
+        <div class="project-detailed-card glass-card reveal active">
+            <div>
+                <span class="role-badge"><i class="fa-solid fa-user-gear"></i> Mi Rol: Diseñadora & Desarrolladora
+                    Frontend</span>
+                <h2 style="font-size: 2.2rem; margin-bottom: 1rem; font-family: 'Outfit';">Alejandro Vaca Portfolio</h2>
+
+                <div class="project-tags" style="margin-bottom: 1.5rem;">
+                    <span class="project-tag">HTML5 / CSS3</span>
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">Figma</span>
+                    <span class="project-tag">Responsive Design</span>
+                </div>
+
+                <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">
+                    Portafolio fotográfico profesional optimizado con animaciones sutiles y carga de imágenes eficiente,
+                    diseñado para reflejar la marca personal del fotógrafo.
+                </p>
+
+                <h3 class="project-section-title">El Problema</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+                    Los fotógrafos profesionales necesitan exhibir galerías de imágenes de alta resolución sin
+                    comprometer los tiempos de carga en dispositivos móviles, un factor crítico para el SEO y la
+                    retención del cliente.
+                </p>
+
+                <h3 class="project-section-title">La Solución</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+                    Creación de un portafolio web con carga perezosa (lazy-loading), optimización y reescalado dinámico
+                    de imágenes, estructurado sobre un diseño responsivo y elegante.
+                </p>
+
+                <h3 class="project-section-title">El Proceso</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+                    1. <strong>Diseño Visual</strong>: Mockup inicial en Figma enfocado en contrastes oscuros que
+                    resalten la fotografía.<br>
+                    2. <strong>Código</strong>: Implementación del maquetado HTML semántico y estilos personalizados CSS
+                    con transiciones fluidas.<br>
+                    3. <strong>Optimización</strong>: Compresión de recursos y scripts JavaScript nativos livianos para
+                    la interactividad de la galería.
+                </p>
+
+                <div style="margin-top: 2rem;">
+                    <a href="https://github.com/olguitabonaparty/alejandro-vaca-portfolio" class="btn btn-primary"
+                        target="_blank">
+                        <i class="fa-brands fa-github"></i> Ver en GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                <div class="image-placeholder has-image">
+                    <img src="img/AlejandroVacaImgPrin.png" alt="Alejandro Vaca Portafolio Imagen Principal">
+                </div>
+
+                <div>
+                    <h3 class="project-section-title" style="margin-top: 0.5rem;">Resultados Obtenidos</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        Puntuación sobresaliente en velocidad de carga y visualización impecable de las galerías.
+                    </p>
+                    <div class="results-placeholder has-image">
+                        <img src="img/AlejandroVacaMockups.png" alt="Alejandro Vaca Portafolio Métricas de Carga">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="index.html" class="brand"><img src="img/logo.png" alt="O.L. Logo"></a>
+            <div class="social-links">
+                <a href="https://github.com/olguitabonaparty"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/olgalopezdelgadillo/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/59161592626"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/itsbonaparty"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Olga María Lopez Delgadillo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Particles.js Library (loaded via CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

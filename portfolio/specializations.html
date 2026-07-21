@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áreas de Especialización | Olga María Lopez Delgadillo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="index.html" class="brand"><img src="img/logo.png" alt="O.L. Logo"></a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Sobre mí</a>
+            <a href="skills.html">Habilidades</a>
+            <a href="projects.html">Proyectos</a>
+            <a href="experience.html">Experiencia</a>
+            <a href="specializations.html" class="active">Áreas de Especialización</a>
+            <a href="contact.html">Contacto</a>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <section id="hero" style="min-height: auto; padding-bottom: 2rem;">
+        <div class="hero-content reveal active">
+            <div class="hero-badge">
+                <i class="fa-solid fa-briefcase"></i> Mis Especialidades
+            </div>
+            <h1 class="hero-title">Áreas de <span>Especialización</span></h1>
+            <p class="hero-desc">
+                Presentación detallada de los campos tecnológicos donde enfoco mis soluciones, integrando el diseño UX/UI con el desarrollo de software y hardware.
+            </p>
+        </div>
+    </section>
+
+    <!-- Specializations Grid Section -->
+    <section id="specializations" style="padding-top: 20px;">
+        <div class="services-grid reveal active" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            
+            <!-- UX Research -->
+            <div class="service-card glass-card">
+                <div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                <h3 class="service-title">UX Research</h3>
+                <p class="service-desc">Investigación profunda del usuario mediante entrevistas, pruebas de usabilidad y análisis de comportamiento para fundamentar decisiones de diseño basadas en necesidades reales.</p>
+            </div>
+
+            <!-- UI Design -->
+            <div class="service-card glass-card">
+                <div class="service-icon"><i class="fa-solid fa-bezier-curve"></i></div>
+                <h3 class="service-title">UI Design</h3>
+                <p class="service-desc">Diseño de interfaces atractivas, modernas e intuitivas. Especializada en maquetación responsiva, tipografía precisa, armonía de color y microinteracciones fluidas.</p>
+            </div>
+
+            <!-- Design Systems -->
+            <div class="service-card glass-card">
+                <div class="service-icon"><i class="fa-solid fa-cubes"></i></div>
+                <h3 class="service-title">Design Systems</h3>
+                <p class="service-desc">Creación y mantenimiento de sistemas de diseño escalables, garantizando consistencia visual y de comportamiento, optimizando el workflow entre diseño y desarrollo.</p>
+            </div>
+
+            <!-- Frontend Development -->
+            <div class="service-card glass-card">
+                <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <h3 class="service-title">Frontend Development</h3>
+                <p class="service-desc">Desarrollo de interfaces web responsivas, dinámicas y de alto rendimiento utilizando tecnologías modernas como HTML5, CSS3, JavaScript y frameworks de vanguardia.</p>
+            </div>
+
+            <!-- Full Stack Development -->
+            <div class="service-card glass-card">
+                <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <h3 class="service-title">Full Stack Development</h3>
+                <p class="service-desc">Construcción integral de aplicaciones web robustas, gestionando bases de datos, APIs eficientes, lógica de servidor e integración perfecta con el lado cliente.</p>
+            </div>
+
+            <!-- Sistemas Embebidos -->
+            <div class="service-card glass-card">
+                <div class="service-icon"><i class="fa-solid fa-microchip"></i></div>
+                <h3 class="service-title">Sistemas Embebidos</h3>
+                <p class="service-desc">Programación en C/C++ y diseño de firmware para microcontroladores y hardware a medida, optimizando recursos físicos y rendimiento.</p>
+            </div>
+
+            <!-- IoT -->
+            <div class="service-card glass-card">
+                <div class="service-icon"><i class="fa-solid fa-wifi"></i></div>
+                <h3 class="service-title">IoT (Internet of Things)</h3>
+                <p class="service-desc">Interconexión de dispositivos físicos con la nube. Integración de protocolos de comunicación inalámbrica y adquisición de datos en tiempo real.</p>
+            </div>
+
+            <!-- Tecnología aplicada a la salud -->
+            <div class="service-card glass-card">
+                <div class="service-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                <h3 class="service-title">Tecnología aplicada a la salud</h3>
+                <p class="service-desc">Diseño de sistemas electrónicos y software inteligente orientados al monitoreo biomédico, telemedicina y dispositivos de salud asistiva de alta precisión.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="index.html" class="brand"><img src="img/logo.png" alt="O.L. Logo"></a>
+            <div class="social-links">
+                <a href="https://github.com/olguitabonaparty"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/olgalopezdelgadillo/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/59161592626"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/itsbonaparty"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Olga María Lopez Delgadillo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Particles.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

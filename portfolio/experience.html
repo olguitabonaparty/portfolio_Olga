@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia y Certificaciones | Olga María Lopez Delgadillo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+        .cert-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .cert-image-placeholder {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, rgba(129, 140, 248, 0.05) 0%, rgba(168, 85, 247, 0.05) 100%);
+            border: 2px dashed var(--card-border);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-top: 1.5rem;
+            text-align: center;
+            padding: 1rem;
+        }
+        .cert-image-placeholder img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 10px;
+            display: block;
+        }
+        .cert-image-placeholder.has-image {
+            height: auto;
+            padding: 0;
+            overflow: hidden;
+            border-style: solid;
+            background: transparent;
+        }
+        .cert-date {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="index.html" class="brand"><img src="img/logo.png" alt="O.L. Logo"></a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Sobre mí</a>
+            <a href="skills.html">Habilidades</a>
+            <a href="projects.html">Proyectos</a>
+            <a href="experience.html" class="active">Experiencia</a>
+            <a href="specializations.html">Áreas de Especialización</a>
+            <a href="contact.html">Contacto</a>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <section id="hero" style="min-height: auto; padding-bottom: 2rem;">
+        <div class="hero-content reveal active">
+            <div class="hero-badge">
+                <i class="fa-solid fa-briefcase"></i> Trayectoria Profesional
+            </div>
+            <h1 class="hero-title">Mi <span>Experiencia</span></h1>
+            <p class="hero-desc">
+                Un recorrido detallado por mis hitos laborales, académicos y certificaciones tecnológicas.
+            </p>
+        </div>
+    </section>
+
+    <!-- Professional Timeline Section -->
+    <section id="professional-trajectory" style="padding-top: 20px;">
+        <div class="section-title reveal active">
+            <h2>Línea de Tiempo</h2>
+            <p>Evolución laboral y académica</p>
+        </div>
+
+        <div class="timeline reveal active">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Mar 2026 – Ago 2026</div>
+                <h3 class="timeline-title">Diplomado en Diseño UX/UI</h3>
+                <div class="timeline-subtitle">Universidad para el Desarrollo y la Innovación (UDI) | Santa Cruz, Bolivia</div>
+                <p class="timeline-desc">Estudios enfocados en la experiencia del usuario, diseño de interfaces visuales avanzadas, prototipado y validación de productos digitales en plataformas móviles y web.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Nov 2025</div>
+                <h3 class="timeline-title">1er Lugar - Premio Plurinacional de Ciencia, Tecnología e Innovación</h3>
+                <div class="timeline-subtitle">Ministerio de Planificación del Desarrollo | La Paz, Bolivia</div>
+                <p class="timeline-desc">Galardonada en la categoría Jóvenes Investigadores (Área: Transformación Industrial y Manufactura). Reconocimiento por innovaciones y aportes al diseño tecnológico de sistemas médicos embebidos.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Dic 2024</div>
+                <h3 class="timeline-title">Licenciatura en Ingeniería Electrónica y Telecomunicaciones</h3>
+                <div class="timeline-subtitle">Universidad Privada Boliviana (UPB) | Cochabamba, Bolivia</div>
+                <p class="timeline-desc">Graduada con nota sobresaliente (100/100) en el Proyecto de Grado enfocado en el "Diseño y Optimización de Sistemas Embebidos para Aplicaciones en el Área de Salud en Bolivia".</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Ene 2024 – Dic 2024</div>
+                <h3 class="timeline-title">Colaboradora en Sistemas Embebidos y Redes Inalámbricas</h3>
+                <div class="timeline-subtitle">Universidad Privada Boliviana (UPB) | Cochabamba, Bolivia</div>
+                <p class="timeline-desc">Implementación y pruebas de redes inalámbricas para aplicaciones de control e IoT. Integración de sensores y microcontroladores en prototipos electrónicos y elaboración de documentación técnica.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Mar 2022 – May 2022</div>
+                <h3 class="timeline-title">Técnica en Seguridad Electrónica e Implementación</h3>
+                <div class="timeline-subtitle">Trans Dialdeju SRL | Cochabamba, Bolivia</div>
+                <p class="timeline-desc">Instalación y configuración de equipos de telecomunicaciones, sistemas de control de acceso y rastreo GPS. Diagnóstico y resolución de incidencias en sistemas electrónicos de seguridad.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Ene 2021 – Dic 2021</div>
+                <h3 class="timeline-title">Presidenta de la Sociedad Estudiantil</h3>
+                <div class="timeline-subtitle">Universidad Privada Boliviana (UPB) | Cochabamba, Bolivia</div>
+                <p class="timeline-desc">Representación de la comunidad estudiantil. Coordinación de actividades académicas, culturales y extracurriculares en la universidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premio Plurinacional Section -->
+    <section id="awards-detail" style="background: rgba(255, 255, 255, 0.01);">
+        <div class="section-title reveal active">
+            <h2>Premio Plurinacional de Ciencia y Tecnología</h2>
+            <p>Reconocimiento a la investigación científica e innovación tecnológica</p>
+        </div>
+
+        <div class="certifications-grid reveal active" style="justify-content: center; display: flex;">
+            <!-- Premio Plurinacional -->
+            <div class="service-card glass-card cert-card" style="max-width: 800px; width: 100%;">
+                <div>
+                    <div class="cert-date"><i class="fa-regular fa-calendar"></i> Nov. 2025</div>
+                    <h3 style="font-size: 1.25rem; font-family: 'Outfit'; font-weight: 700; margin-bottom: 0.75rem;">Primer Lugar – Premio Plurinacional de Ciencia, Tecnología e Innovación</h3>
+                    <div class="timeline-subtitle" style="font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--accent-light); font-weight: 600;">Expedido por Ministerio de Planificación del Desarrollo – Viceministerio de Ciencia y Tecnología · nov. 2025</div>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.2rem;">
+                        Reconocimiento otorgado por el Ministerio de Planificación del Desarrollo por obtener el Primer Lugar en la Categoría B – Jóvenes Investigadores, en el área de Transformación Industrial y Manufactura, dentro del Premio Plurinacional de Ciencia, Tecnología e Innovación en Bolivia.
+                    </p>
+                </div>
+                <div class="cert-image-placeholder has-image">
+                    <img src="img/PremioPlurinacional.png" alt="Premio Plurinacional de Ciencia, Tecnología e Innovación">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications-detail" style="background: rgba(255, 255, 255, 0.01);">
+        <div class="section-title reveal active">
+            <h2>Certificaciones Tecnológicas</h2>
+            <p>Especializaciones y cursos de formación continua</p>
+        </div>
+
+        <div class="certifications-grid reveal active">
+            
+            <!-- Cert: Ethical Hacking -->
+            <div class="service-card glass-card cert-card">
+                <div>
+                    <div class="cert-date"><i class="fa-regular fa-calendar"></i> May. 2026</div>
+                    <h3 style="font-size: 1.25rem; font-family: 'Outfit'; font-weight: 700; margin-bottom: 0.75rem;">Ethical Hacking</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        Certificación oficial en ciberseguridad y hacking ético. Especialización en análisis de vulnerabilidades, auditorías de seguridad física/digital y defensa de redes corporativas.
+                    </p>
+                </div>
+                <div class="cert-image-placeholder has-image">
+                    <img src="img/CertificadoCisco.jpeg" alt="Certificado Ethical Hacking">
+                </div>
+                <div style="margin-top: 1.2rem; display: flex; width: 100%;">
+                    <a href="img/CertificadoCisco.jpeg" download="CertificadoCisco.jpeg" class="btn btn-primary" style="width: 100%; justify-content: center; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <i class="fa-solid fa-download"></i> Descargar Certificado
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cert 1: React Native -->
+            <div class="service-card glass-card cert-card">
+                <div>
+                    <div class="cert-date"><i class="fa-regular fa-calendar"></i> Abr. 2026</div>
+                    <h3 style="font-size: 1.25rem; font-family: 'Outfit'; font-weight: 700; margin-bottom: 0.75rem;">React Native</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        Desarrollo Multiplataforma con Expo y Supabase. Creación de aplicaciones nativas escalables para iOS y Android.
+                    </p>
+                </div>
+                <div class="cert-image-placeholder has-image">
+                    <img src="img/CertificadoReactNative.png" alt="Certificado React Native">
+                </div>
+                <div style="margin-top: 1.2rem; display: flex; width: 100%;">
+                    <a href="img/CertificadoReactNative.png" download="CertificadoReactNative.png" class="btn btn-primary" style="width: 100%; justify-content: center; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <i class="fa-solid fa-download"></i> Descargar Certificado
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cert 2: Angular 21 -->
+            <div class="service-card glass-card cert-card">
+                <div>
+                    <div class="cert-date"><i class="fa-regular fa-calendar"></i> Feb. 2026</div>
+                    <h3 style="font-size: 1.25rem; font-family: 'Outfit'; font-weight: 700; margin-bottom: 0.75rem;">Angular 21</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        Desarrollo de aplicaciones web modernas con arquitectura profesional y optimización de rendimiento frontend.
+                    </p>
+                </div>
+                <div class="cert-image-placeholder has-image">
+                    <img src="img/CertificadoAngular.png" alt="Certificado Angular">
+                </div>
+                <div style="margin-top: 1.2rem; display: flex; width: 100%;">
+                    <a href="img/CertificadoAngular.png" download="CertificadoAngular.png" class="btn btn-primary" style="width: 100%; justify-content: center; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <i class="fa-solid fa-download"></i> Descargar Certificado
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cert 3: Especialista POS -->
+            <div class="service-card glass-card cert-card">
+                <div>
+                    <div class="cert-date"><i class="fa-regular fa-calendar"></i> Dic. 2025</div>
+                    <h3 style="font-size: 1.25rem; font-family: 'Outfit'; font-weight: 700; margin-bottom: 0.75rem;">Sistemas POS</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        Especialista en Creación de Sistemas de Punto de Venta (POS) con control de inventarios, facturación y reportes.
+                    </p>
+                </div>
+                <div class="cert-image-placeholder has-image">
+                    <img src="img/CertificadoPOS.png" alt="Certificado Sistemas POS">
+                </div>
+                <div style="margin-top: 1.2rem; display: flex; width: 100%;">
+                    <a href="img/CertificadoPOS.png" download="CertificadoPOS.png" class="btn btn-primary" style="width: 100%; justify-content: center; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <i class="fa-solid fa-download"></i> Descargar Certificado
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cert 4: FullStack React + Nest -->
+            <div class="service-card glass-card cert-card">
+                <div>
+                    <div class="cert-date"><i class="fa-regular fa-calendar"></i> Nov. 2025</div>
+                    <h3 style="font-size: 1.25rem; font-family: 'Outfit'; font-weight: 700; margin-bottom: 0.75rem;">FullStack React & NestJS</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        Arquitectura moderna Full Stack implementando interfaces de usuario con React y microservicios robustos en el backend con NestJS.
+                    </p>
+                </div>
+                <div class="cert-image-placeholder has-image">
+                    <img src="img/CertificadoFullStack.png" alt="Certificado FullStack React & NestJS">
+                </div>
+                <div style="margin-top: 1.2rem; display: flex; width: 100%;">
+                    <a href="img/CertificadoFullStack.png" download="CertificadoFullStack.png" class="btn btn-primary" style="width: 100%; justify-content: center; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <i class="fa-solid fa-download"></i> Descargar Certificado
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cert 5: Automatizaciones n8n -->
+            <div class="service-card glass-card cert-card">
+                <div>
+                    <div class="cert-date"><i class="fa-regular fa-calendar"></i> Oct. 2025</div>
+                    <h3 style="font-size: 1.25rem; font-family: 'Outfit'; font-weight: 700; margin-bottom: 0.75rem;">Automatizaciones n8n</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        Creación de Sistemas de Reservas automatizados y Chatbots de WhatsApp integrados con Inteligencia Artificial utilizando flujos en n8n.
+                    </p>
+                </div>
+                <div class="cert-image-placeholder has-image">
+                    <img src="img/Certificadon8n.png" alt="Certificado Automatizaciones n8n">
+                </div>
+                <div style="margin-top: 1.2rem; display: flex; width: 100%;">
+                    <a href="img/Certificadon8n.png" download="Certificadon8n.png" class="btn btn-primary" style="width: 100%; justify-content: center; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <i class="fa-solid fa-download"></i> Descargar Certificado
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="index.html" class="brand"><img src="img/logo.png" alt="O.L. Logo"></a>
+            <div class="social-links">
+                <a href="https://github.com/olguitabonaparty"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/olgalopezdelgadillo/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/59161592626"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/itsbonaparty"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Olga María Lopez Delgadillo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Particles.js Library (loaded via CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

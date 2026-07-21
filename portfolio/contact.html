@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Olga María Lopez Delgadillo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="index.html" class="brand"><img src="img/logo.png" alt="O.L. Logo"></a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Sobre mí</a>
+            <a href="skills.html">Habilidades</a>
+            <a href="projects.html">Proyectos</a>
+            <a href="experience.html">Experiencia</a>
+            <a href="specializations.html">Áreas de Especialización</a>
+            <a href="contact.html" class="active">Contacto</a>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <section id="hero" style="min-height: auto; padding-bottom: 2rem;">
+        <div class="hero-content reveal active">
+            <div class="hero-badge">
+                <i class="fa-solid fa-paper-plane"></i> Hablemos
+            </div>
+            <h1 class="hero-title">Ponte en <span>Contacto</span></h1>
+            <p class="hero-desc">
+                ¿Tienes alguna propuesta de proyecto, vacante o pregunta? <br>
+                Escríbeme y responderé lo antes posible.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="padding-top: 20px;">
+        <div class="contact-container reveal active">
+            <!-- Left Info Panel -->
+            <div class="contact-info">
+
+                <!-- Availability Badge/Card -->
+                <div class="contact-item glass-card" style="border-left: 4px solid var(--accent-color);">
+                    <div class="contact-icon" style="background: rgba(99, 102, 241, 0.15);"><i
+                            class="fa-solid fa-briefcase"></i></div>
+                    <div class="contact-details">
+                        <h4>Disponibilidad</h4>
+                        <p style="display: flex; align-items: center; gap: 8px; font-weight: 600; color: #10b981;">
+                            <span
+                                style="display:inline-block; width: 10px; height: 10px; border-radius: 50%; background-color:#10b981; box-shadow: 0 0 10px #10b981; animation: pulse 2s infinite;"></span>
+                            Disponible para trabajar
+                        </p>
+                        <p style="font-size: 0.85rem; margin-top: 4px;">Abierta a ofertas full-time y proyectos
+                            freelance.</p>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <a href="mailto:olguitabonaparty@gmail.com" class="contact-item glass-card">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="contact-details">
+                        <h4>Correo electrónico</h4>
+                        <p>olguitabonaparty@gmail.com</p>
+                    </div>
+                </a>
+
+                <!-- Location -->
+                <div class="contact-item glass-card">
+                    <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="contact-details">
+                        <h4>Ubicación</h4>
+                        <p>Cochabamba, Bolivia</p>
+                    </div>
+                </div>
+
+                <!-- Social Links Card -->
+                <div class="contact-item glass-card"
+                    style="flex-direction: column; align-items: flex-start; gap: 1rem;">
+                    <h4 style="font-family: 'Outfit', sans-serif; font-size: 1.1rem; color: var(--text-primary);">Redes
+                        Profesionales</h4>
+                    <div style="display: flex; gap: 1rem; width: 100%;">
+                        <a href="https://www.linkedin.com/in/olgalopezdelgadillo/" target="_blank"
+                            class="btn btn-outline glass-card"
+                            style="padding: 0.8rem; border-radius: 12px; flex: 1; text-align: center; justify-content: center; gap: 8px;">
+                            <i class="fa-brands fa-linkedin" style="font-size: 1.25rem; color:#0a66c2;"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/olguitabonaparty" target="_blank" class="btn btn-outline glass-card"
+                            style="padding: 0.8rem; border-radius: 12px; flex: 1; text-align: center; justify-content: center; gap: 8px;">
+                            <i class="fa-brands fa-github" style="font-size: 1.25rem;"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Form Panel -->
+            <form class="contact-form glass-card"
+                onsubmit="event.preventDefault(); alert('Mensaje enviado. ¡Gracias por contactarme!');">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Tu Nombre" required
+                        style="width: 100%; padding: 1rem; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; color: var(--text-primary); outline: none;">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Tu Email" required
+                        style="width: 100%; padding: 1rem; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; color: var(--text-primary); outline: none;">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Asunto" required
+                        style="width: 100%; padding: 1rem; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; color: var(--text-primary); outline: none;">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Tu Mensaje" required
+                        style="width: 100%; min-height: 150px; padding: 1rem; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; color: var(--text-primary); outline: none; resize: vertical;"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit"
+                    style="width: 100%; justify-content: center; padding: 1rem;">Enviar Mensaje <i
+                        class="fa-regular fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="index.html" class="brand"><img src="img/logo.png" alt="O.L. Logo"></a>
+            <div class="social-links">
+                <a href="https://github.com/olguitabonaparty"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/olgalopezdelgadillo/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/59161592626"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/itsbonaparty"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Olga María Lopez Delgadillo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Style additions for animations -->
+    <style>
+        @keyframes pulse {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            }
+
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+            }
+
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+            }
+        }
+
+        .form-control:focus {
+            border-color: var(--accent-color) !important;
+            box-shadow: 0 0 10px var(--accent-shadow-30);
+        }
+    </style>
+
+    <!-- Particles.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

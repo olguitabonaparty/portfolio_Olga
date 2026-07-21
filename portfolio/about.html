@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí | Olga María Lopez Delgadillo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="index.html" class="brand"><img src="img/logo.png" alt="O.L. Logo"></a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="about.html" class="active">Sobre mí</a>
+            <a href="skills.html">Habilidades</a>
+            <a href="projects.html">Proyectos</a>
+            <a href="experience.html">Experiencia</a>
+            <a href="specializations.html">Áreas de Especialización</a>
+            <a href="contact.html">Contacto</a>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" style="min-height: auto; padding-bottom: 2rem;">
+        <div class="hero-content reveal active">
+            <div class="hero-badge">
+                <i class="fa-solid fa-user"></i> Conoce mi historia
+            </div>
+            <div class="hero-avatar">
+                <img src="img/fotoperfil.jpg" alt="Olga Lopez">
+            </div>
+            <h1 class="hero-title">Sobre <span>Mí</span></h1>
+            <p class="hero-desc">
+                Ingeniera Electrónica, Desarrolladora Full Stack y Diseñadora UX/UI.
+                Me apasiona conectar el mundo físico con el digital.
+            </p>
+            <div class="hero-btns">
+                <a href="docs/Olga Lopez Delgadillo Curriculum Vitae.pdf" class="btn btn-primary" download><i
+                        class="fa-solid fa-download"></i> Descargar CV</a>
+                <a href="contact.html" class="btn btn-outline glass-card">Contacto <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presentación e Historia -->
+    <section id="presentation">
+        <div class="section-title reveal active">
+            <h2>Breve Presentación</h2>
+            <p>Quién soy y qué me impulsa</p>
+        </div>
+        <div class="about-grid reveal active" style="grid-template-columns: 1.2fr 0.8fr;">
+            <div class="about-text">
+                <p>
+                    Soy <strong>Olga María Lopez Delgadillo</strong>, graduada con máximos honores en Ingeniería
+                    Electrónica y Telecomunicaciones por la Universidad Privada Boliviana (UPB) y especializada en
+                    Diseño UX/UI. Mi enfoque profesional reside en la intersección del software moderno, la inteligencia
+                    artificial y el desarrollo de hardware inteligente (IoT).
+                </p>
+                <p>
+                    A lo largo de mi trayectoria académica y profesional, me he dedicado a crear tecnologías con
+                    propósito, aplicando inteligencia artificial y sistemas embebidos en el sector salud. Esta pasión me
+                    llevó a recibir el <strong>1er Lugar del Premio Plurinacional de Ciencia, Tecnología e Innovación de
+                        Bolivia</strong>.
+                </p>
+
+                <h3 style="font-size: 1.5rem; margin-top: 2.5rem; margin-bottom: 1rem; color: var(--accent-color);">Mi
+                    Filosofía de Diseño</h3>
+                <p
+                    style="font-style: italic; border-left: 3px solid var(--accent-color); padding-left: 1.5rem; font-size: 1.1rem; color: var(--text-primary);">
+                    "El diseño no es solo cómo se ve, sino cómo funciona. Busco la síntesis perfecta entre una interfaz
+                    digital atractiva e intuitiva y un firmware óptimo y eficiente en el hardware. Creo en crear
+                    soluciones tecnológicas centradas en el usuario que verdaderamente simplifiquen y mejoren la calidad
+                    de vida de las personas."
+                </p>
+            </div>
+            <div class="about-img glass-card"
+                style="display: flex; flex-direction: column; justify-content: center; gap: 1.5rem;">
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; color: var(--accent-color); margin-bottom: 0.5rem;"><i
+                            class="fa-solid fa-microchip"></i></div>
+                    <h4>Hardware</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Diseño de PCBs, IoT y Firmware en C/C++
+                    </p>
+                </div>
+                <div style="border-top: 1px solid var(--card-border); margin: 0.5rem 0;"></div>
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; color: var(--accent-color); margin-bottom: 0.5rem;"><i
+                            class="fa-solid fa-code"></i></div>
+                    <h4>Software</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">React, Next.js, Node.js y Python (AI)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trayectoria y Línea de Tiempo -->
+    <section id="trajectory" style="background: rgba(255, 255, 255, 0.01);">
+        <div class="section-title reveal active">
+            <h2>Trayectoria Profesional</h2>
+            <p>Una línea de tiempo detallada de mi recorrido y formación académica</p>
+        </div>
+
+        <div class="timeline reveal active">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Mar 2026 – Ago 2026</div>
+                <h3 class="timeline-title">Diplomado en Diseño UX/UI</h3>
+                <div class="timeline-subtitle">Universidad para el Desarrollo y la Innovación (UDI) | Santa Cruz,
+                    Bolivia</div>
+                <p class="timeline-desc">Estudios enfocados en la experiencia del usuario, diseño de interfaces visuales
+                    avanzadas, prototipado y validación de productos digitales.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Nov 2025</div>
+                <h3 class="timeline-title">1er Lugar - Premio Plurinacional de Ciencia, Tecnología e Innovación</h3>
+                <div class="timeline-subtitle">Ministerio de Planificación del Desarrollo | La Paz, Bolivia</div>
+                <p class="timeline-desc">Galardonada en la categoría Jóvenes Investigadores por el desarrollo y la
+                    manufactura tecnológica enfocada en la transformación industrial y salud.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Dic 2024</div>
+                <h3 class="timeline-title">Licenciatura en Ingeniería Electrónica y Telecomunicaciones</h3>
+                <div class="timeline-subtitle">Universidad Privada Boliviana (UPB) | Cochabamba, Bolivia</div>
+                <p class="timeline-desc">Graduada con mención sobresaliente. Proyecto de Grado: "Diseño y Optimización
+                    de Sistemas Embebidos para Aplicaciones en el Área de Salud en Bolivia" [Calificación: 100/100].</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Ene 2024 – Dic 2024</div>
+                <h3 class="timeline-title">Colaboradora en Sistemas Embebidos y Redes Inalámbricas</h3>
+                <div class="timeline-subtitle">Universidad Privada Boliviana (UPB) | Cochabamba, Bolivia</div>
+                <p class="timeline-desc">Implementación y testeo de redes inalámbricas de sensores, control de
+                    dispositivos IoT y elaboración de documentación técnica para publicaciones científicas.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Mar 2022 – May 2022</div>
+                <h3 class="timeline-title">Técnica en Seguridad Electrónica e Implementación</h3>
+                <div class="timeline-subtitle">Trans Dialdeju SRL | Cochabamba, Bolivia</div>
+                <p class="timeline-desc">Instalación y configuración de equipos de telecomunicaciones, sistemas de
+                    control de acceso y rastreo GPS vehicular.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificaciones, Premios y Reconocimientos -->
+    <section id="certifications">
+        <div class="section-title reveal active">
+            <h2>Premios y Certificaciones</h2>
+            <p>Reconocimiento a mi dedicación y continuo aprendizaje profesional</p>
+        </div>
+
+        <div class="services-grid reveal active">
+            <!-- Reconocimiento 1 -->
+            <div class="service-card glass-card">
+                <div class="service-icon"><i class="fa-solid fa-trophy"></i></div>
+                <h3 class="service-title">Premio Plurinacional de Ciencia</h3>
+                <p class="service-desc">Otorgado por el Ministerio de Planificación del Desarrollo de Bolivia en 2025.
+                </p>
+            </div>
+            <!-- Certificación 1 -->
+            <div class="service-card glass-card">
+                <div class="service-icon"><i class="fa-solid fa-stamp"></i></div>
+                <h3 class="service-title">Certificación UX/UI Design</h3>
+                <p class="service-desc">Emitida por la UDI, cubriendo metodologías ágiles de diseño y experiencia de
+                    usuario.</p>
+            </div>
+            <!-- Certificación 2 -->
+            <div class="service-card glass-card">
+                <div class="service-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3 class="service-title">Build with AI Participant</h3>
+                <p class="service-desc">Participación y desarrollo de soluciones basadas en LLMs y Visión por
+                    Computadora.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="index.html" class="brand"><img src="img/logo.png" alt="O.L. Logo"></a>
+            <div class="social-links">
+                <a href="https://github.com/olguitabonaparty"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/olgalopezdelgadillo/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/59161592626"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/itsbonaparty"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Olga María Lopez Delgadillo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Particles.js Library (loaded via CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

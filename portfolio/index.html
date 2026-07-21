@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olga María Lopez Delgadillo | Electrónica y Telecomunicaciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="#hero" class="brand"><img src="img/logo.png" alt="O.L. Logo"></a>
+        <div class="nav-links">
+            <a href="about.html">Sobre mí</a>
+            <a href="skills.html">Habilidades</a>
+            <a href="projects.html">Proyectos</a>
+            <a href="experience.html">Experiencia</a>
+            <a href="specializations.html">Áreas de Especialización</a>
+            <a href="contact.html">Contacto</a>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content reveal">
+            <div class="hero-badge">
+                <i class="fa-solid fa-code"></i> Disponible para nuevos proyectos
+            </div>
+            <div class="hero-avatar">
+                <!-- Profile Avatar -->
+                <img src="img/fotoperfil.jpg" alt="Olga Lopez">
+            </div>
+            <h1 class="hero-title">Hola, soy <span>Olga</span><br>María Lopez</h1>
+            <p class="hero-desc">
+                Desarrolladora Full Stack e Ingeniera Electrónica y Telecomunicaciones especializada en sistemas
+                embebidos, IoT e inteligencia artificial.<br>
+                Diseño soluciones que conectan hardware y software para resolver problemas
+                reales
+            </p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">Ver mis proyectos</a>
+                <a href="contact.html" class="btn btn-outline glass-card">Contactar <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-title reveal">
+            <h2>Sobre mí</h2>
+            <p>Conoce mi historia y lo que me apasiona</p>
+        </div>
+        <div class="about-grid reveal">
+            <div class="about-img glass-card">
+                <!-- Futuristic graphic or code snippet visual -->
+                <div
+                    style="background: #1e1e1e; padding: 1.5rem; border-radius: 12px; font-family: monospace; color: #a1a1aa; font-size: 0.9rem; overflow: hidden;">
+                    <span style="color:#569cd6">const</span> <span style="color:#4fc1ff">olga</span> = {<br>
+                    &nbsp;&nbsp;role: <span style="color:#ce9178">'Full Stack & Electronics Eng'</span>,<br>
+                    &nbsp;&nbsp;skills: [<span style="color:#ce9178">'Web'</span>, <span
+                        style="color:#ce9178">'Hardware'</span>, <span style="color:#ce9178">'AI'</span>],<br>
+                    &nbsp;&nbsp;passion: <span style="color:#ce9178">'Creating the future'</span>,<br>
+                    &nbsp;&nbsp;code: () => {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#c586c0">return</span> <span style="color:#ce9178">'Magic
+                        ✨'</span>;<br>
+                    &nbsp;&nbsp;}<br>
+                    };
+                </div>
+            </div>
+            <div class="about-text">
+                <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Transformando ideas en realidad tecnológica.</h3>
+                <p>
+                    Soy Olga María Lopez Delgadillo, Ingeniera Electrónica y Telecomunicaciones con
+                    diplomado en Diseño UX/UI. Combino el desarrollo de software moderno con la ingeniería electrónica,
+                    enfocándome en sistemas embebidos, IoT, y diseño centrado en el usuario.
+                </p>
+                <p>
+                    Me apasiona el diseño minimalista, el rendimiento óptimo y la integración de tecnología aplicada a
+                    la salud e inteligencia artificial para resolver problemas complejos de manera elegante.
+                </p>
+
+                <div class="about-stats">
+                    <div class="stat-item glass-card">
+                        <div class="stat-num counter" data-target="3">0</div>
+                        <div class="stat-desc">Proyectos Destacados</div>
+                    </div>
+                    <div class="stat-item glass-card">
+                        <div class="stat-num"><span class="counter" data-target="15">0</span>+</div>
+                        <div class="stat-desc">Certificaciones</div>
+                    </div>
+                    <div class="stat-item glass-card">
+                        <div class="stat-num"><span class="counter" data-target="1">0</span></div>
+                        <div class="stat-desc">Premio Nacional de Ciencia e Innovación</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Tech Section -->
+    <section id="skills">
+        <div class="section-title reveal">
+            <h2>Habilidades & Tecnologías</h2>
+            <p>Mi stack tecnológico para crear soluciones que conectan software, hardware e inteligencia artificial</p>
+        </div>
+
+        <div class="skills-grid reveal">
+            <div class="skill-category glass-card">
+                <h3><i class="fa-solid fa-layer-group"></i> Frontend & UX/UI</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span><i class="fa-brands fa-react"></i> React /
+                            Next.js</span><span>Intermedio</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span><i class="fa-brands fa-html5"></i> HTML / CSS /
+                            JS</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span><i class="fa-brands fa-figma"></i> Figma & UI
+                            Design</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category glass-card">
+                <h3><i class="fa-solid fa-server"></i> Backend & AI</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span><i class="fa-brands fa-node-js"></i> Node.js /
+                            Express</span><span>Intermedio</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="78%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span><i class="fa-brands fa-python"></i> Python &
+                            TensorFlow</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span><i class="fa-solid fa-database"></i> PostgreSQL /
+                            Docker</span><span>Intermedio</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category glass-card">
+                <h3><i class="fa-solid fa-microchip"></i> Hardware & Embebidos</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span><i class="fa-solid fa-c"></i> C / C++</span><span>Avanzado</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span><i class="fa-solid fa-microchip"></i> Arduino /
+                            ESP32</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-container">
+                    <div class="skill-info"><span><i class="fa-solid fa-wifi"></i> IoT
+                            Architectures</span><span>Avanzado</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tech-container reveal">
+            <!-- Tech Icons -->
+            <div class="tech-icon glass-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
+            <div class="tech-icon glass-card"><i class="fa-brands fa-java"></i><span>Java</span></div>
+            <div class="tech-icon glass-card"><i class="fa-solid fa-c"></i><span>C/C++</span></div>
+            <div class="tech-icon glass-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+            <div class="tech-icon glass-card"><i class="fa-brands fa-react"></i><span>React</span></div>
+            <div class="tech-icon glass-card"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+            <div class="tech-icon glass-card"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+            <div class="tech-icon glass-card"><i class="fa-brands fa-figma"></i><span>Figma</span></div>
+            <div class="tech-icon glass-card"><i class="fa-solid fa-microchip"></i><span>ESP32</span></div>
+            <div class="tech-icon glass-card"><i class="fa-solid fa-microchip"></i><span>Arduino</span></div>
+            <div class="tech-icon glass-card"><i class="fa-solid fa-wifi"></i><span>IoT</span></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-title reveal">
+            <h2>Proyectos Destacados</h2>
+            <p>Una selección de mis trabajos más recientes y emocionantes</p>
+        </div>
+
+        <div class="projects-grid reveal">
+            <!-- Project 1 -->
+            <div class="project-card glass-card">
+                <div class="project-img">
+                    <div
+                        style="width:100%; height:100%; background:linear-gradient(45deg, #1e293b, #0f172a); display:flex; align-items:center; justify-content:center; color:#fff; font-size:3rem;">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">ESP32</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">Socket.IO</span>
+                        <span class="project-tag">IoT</span>
+                    </div>
+                    <h3 class="project-title">VitaCare</h3>
+                    <p class="project-desc">Diseño de un sistema para cabeceras hospitalarias inteligentes capaz de
+                        monitorear signos vitales y variables ambientales en tiempo real.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/olguitabonaparty/tesis-sistemas-embebidos-salud-bolivia"
+                            class="project-link"><i class="fa-brands fa-github"></i> Código</a>
+                        <a href="https://github.com/olguitabonaparty/tesis-sistemas-embebidos-salud-bolivia/blob/main/README.md"
+                            class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card glass-card">
+                <div class="project-img">
+                    <div
+                        style="width:100%; height:100%; background:linear-gradient(45deg, #312e81, #1e1b4b); display:flex; align-items:center; justify-content:center; color:#fff; font-size:3rem;">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">UX/UI</span>
+                        <span class="project-tag">Figma</span>
+                        <span class="project-tag">Design Thinking</span>
+                    </div>
+                    <h3 class="project-title">Fundación VIVA</h3>
+                    <p class="project-desc">Diseño de una experiencia digital centrada en el usuario, desarrollada
+                        mediante metodologías UX/UI para mejorar la interacción, accesibilidad y usabilidad de la
+                        plataforma.</p>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/design/UfCpVMiMiLY7nouCd5hnPw/Redise%C3%B1o-UX-UI-%E2%80%93-Fundaci%C3%B3n-VIVA?node-id=6-1933&t=MsxzO8IKqHBzo6Cv-1"
+                            class="project-link"><i class="fa-brands fa-figma"></i> Diseño</a>
+                        <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver
+                            Proyecto</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card glass-card">
+                <div class="project-img">
+                    <div
+                        style="width:100%; height:100%; background:linear-gradient(45deg, #064e3b, #022c22); display:flex; align-items:center; justify-content:center; color:#fff; font-size:3rem;">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">AI</span>
+                        <span class="project-tag">Computer Vision</span>
+                    </div>
+                    <h3 class="project-title">Alejandro Vaca Portfolio</h3>
+                    <p class="project-desc">Diseño de una plataforma web moderna y responsive para un fotógrafo
+                        profesional, para fortalecer su marca personal y mejorar la conexión
+                        con potenciales clientes.</p>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/design/wRWVsDFyA4hHS9EAEoUjgz/Alejandro-Vaca"
+                            class="project-link"><i class="fa-brands fa-figma"></i> Diseño</a>
+                        <a href="https://github.com/olguitabonaparty/alejandro-vaca-portfolio" class="project-link"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i> Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Timeline -->
+    <section id="experience">
+        <div class="section-title reveal">
+            <h2>Trayectoria Profesional</h2>
+            <p>Mi evolución académica y experiencia laboral</p>
+        </div>
+
+        <div class="timeline reveal">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Mar 2026 – Ago 2026</div>
+                <h3 class="timeline-title">Diplomado en Diseño UX/UI</h3>
+                <div class="timeline-subtitle">Universidad para el Desarrollo y la Innovación (UDI) | Santa Cruz,
+                    Bolivia</div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Nov 2025</div>
+                <h3 class="timeline-title">1er Lugar - Premio Plurinacional de Ciencia, Tecnología e Innovación</h3>
+                <div class="timeline-subtitle">Ministerio de Planificación del Desarrollo | La Paz, Bolivia</div>
+                <p class="timeline-desc">Categoría B – Jóvenes Investigadores. Área: Transformación Industrial y
+                    Manufactura. Reconocimiento por contribuciones a la investigación e innovación tecnológica.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Dic 2024</div>
+                <h3 class="timeline-title">Licenciatura en Ingeniería Electrónica y Telecomunicaciones</h3>
+                <div class="timeline-subtitle">Universidad Privada Boliviana (UPB) | Cochabamba, Bolivia</div>
+                <p class="timeline-desc">Diseño y Optimización de Sistemas Embebidos para Aplicaciones en el Área de
+                    Salud en Bolivia [Nota: 100].</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Ene 2024 – Dic 2024</div>
+                <h3 class="timeline-title">Colaboradora en Sistemas Embebidos y Redes Inalámbricas</h3>
+                <div class="timeline-subtitle">Universidad Privada Boliviana (UPB) | Cochabamba, Bolivia</div>
+                <p class="timeline-desc">Implementación y prueba de redes inalámbricas para aplicaciones de
+                    telecomunicaciones y control. Integración de sensores y microcontroladores en prototipos
+                    electrónicos. Elaboración de documentación técnica.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Mar 2022 – May 2022</div>
+                <h3 class="timeline-title">Técnica en Seguridad Electrónica e Implementación de Sistemas de Monitoreo
+                </h3>
+                <div class="timeline-subtitle">Trans Dialdeju SRL | Cochabamba, Bolivia</div>
+                <p class="timeline-desc">Instalación y configuración de equipos de telecomunicaciones. Implementación de
+                    sistemas de control de acceso y rastreo GPS. Diagnóstico y resolución de incidencias en sistemas
+                    electrónicos de seguridad.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Ene 2021 – Dic 2021</div>
+                <h3 class="timeline-title">Presidenta de la Sociedad Estudiantil</h3>
+                <div class="timeline-subtitle">Universidad Privada Boliviana (UPB) | Cochabamba, Bolivia</div>
+                <p class="timeline-desc">Representación de la comunidad estudiantil. Coordinación de actividades
+                    académicas, culturales y extracurriculares. Organización de eventos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="section-title reveal">
+            <h2>Áreas de Especialización</h2>
+            <p>Soluciones integrales para tus desafíos tecnológicos</p>
+        </div>
+
+        <div class="services-grid reveal">
+            <div class="service-card glass-card">
+                <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <h3 class="service-title">Desarrollo Web Full Stack</h3>
+                <p class="service-desc">Aplicaciones web modernas, escalables y responsivas utilizando el ecosistema
+                    MERN/PERN, con enfoque en rendimiento y SEO.</p>
+            </div>
+            <div class="service-card glass-card">
+                <div class="service-icon"><i class="fa-solid fa-microchip"></i></div>
+                <h3 class="service-title">Diseño de Hardware & IoT</h3>
+                <p class="service-desc">Prototipado, diseño de PCBs y desarrollo de firmware para dispositivos
+                    inteligentes e Internet de las Cosas.</p>
+            </div>
+            <div class="service-card glass-card">
+                <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <h3 class="service-title">Diseño UX/UI Premium</h3>
+                <p class="service-desc">Interfaces limpias, minimalistas y altamente interactivas enfocadas en la mejor
+                    experiencia de usuario.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reconocimientos Section -->
+    <section id="reconocimientos">
+        <div class="section-title reveal">
+            <h2>Reconocimientos</h2>
+            <p>Logros y distinciones destacadas</p>
+        </div>
+
+        <div class="services-grid reveal">
+            <div class="service-card glass-card" style="padding: 2rem;">
+                <div class="service-icon" style="font-size: 3rem; margin-bottom: 1rem;">🏆</div>
+                <h3 class="service-title" style="font-size: 1.1rem;">Premio Nacional de Ciencia y Tecnología</h3>
+            </div>
+            <div class="service-card glass-card" style="padding: 2rem;">
+                <div class="service-icon" style="font-size: 3rem; margin-bottom: 1rem;">🎓</div>
+                <h3 class="service-title" style="font-size: 1.1rem;">Ingeniería Electrónica y Telecomunicaciones - UPB
+                </h3>
+            </div>
+            <div class="service-card glass-card" style="padding: 2rem;">
+                <div class="service-icon" style="font-size: 3rem; margin-bottom: 1rem;">🎨</div>
+                <h3 class="service-title" style="font-size: 1.1rem;">Diplomado UX/UI - UDI</h3>
+            </div>
+            <div class="service-card glass-card" style="padding: 2rem;">
+                <div class="service-icon" style="font-size: 3rem; margin-bottom: 1rem;">🚀</div>
+                <h3 class="service-title" style="font-size: 1.1rem;">Participante Build With AI Bolivia</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="padding-top: 0px; padding-bottom: 100px; min-height: auto; margin-top: -65px;">
+        <div class="section-title reveal" style="margin-bottom: 1.5rem;">
+            <h2>Trabajemos Juntos</h2>
+            <p>¿Tienes un proyecto?</p>
+        </div>
+
+        <div class="contact-cta-container reveal" style="text-align: center; max-width: 600px; margin: 0 auto; width: 100%;">
+            <div class="glass-card" style="padding: 3rem 2rem; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
+                <p style="font-size: 1.2rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.5rem;">
+                    Estoy disponible para oportunidades de UX/UI, Frontend y Desarrollo Full Stack.
+                </p>
+                <a href="contact.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2.5rem; display: inline-flex; align-items: center; gap: 8px;">
+                    Contactarme <i class="fa-regular fa-paper-plane"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="#hero" class="brand"><img src="img/logo.png" alt="O.L. Logo"></a>
+            <div class="social-links">
+                <a href="https://github.com/olguitabonaparty"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/olgalopezdelgadillo/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/59161592626"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/itsbonaparty"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Olga María Lopez Delgadillo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Particles.js Library (loaded via CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+        <script src="js/script.js" defer></script>
+</body>
+
+</html>
